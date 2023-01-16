@@ -396,7 +396,7 @@ EOF
 
     # Get the path to the right zsh binary
     # 1. Use the most preceding one based on $PATH, then check that it's in the shells file
-    # 2. If that fails, get a zsh path from the shells file, then check it actually exists
+  # 2. If that fails, get a zsh path from the shells file, then check it actually exists
     if ! zsh=$(command -v zsh) || ! grep -qx "$zsh" "$shells_file"; then
       if ! zsh=$(grep '^/.*/zsh$' "$shells_file" | tail -n 1) || [ ! -f "$zsh" ]; then
         fmt_error "no zsh binary found or not present in '$shells_file'"
@@ -404,8 +404,7 @@ EOF
         return
       fi
     fi
-  fi
-
+fi
   # We're going to change the default shell, so back up the current one
   if [ -n "$SHELL" ]; then
     echo "$SHELL" > ~/.shell.pre-oh-my-zsh
@@ -518,7 +517,7 @@ EOF
     exit
   fi
 
-  exec zsh -l
+  #exec zsh -l
 }
 
 main "$@"
