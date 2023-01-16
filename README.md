@@ -102,3 +102,5 @@ Copy OhMyZsh worked
 [powerlevel10k] fetching gitstatusd .. [ok]
 
 ```
+
+![alt text](https://github.com/vlaine5/myzsh/blob/main/images/screen.png?raw=true)
