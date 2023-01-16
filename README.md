@@ -1,4 +1,16 @@
-# myzsh
+
+# My zsh
+Here is a personnal zsh terminal, very simple but nice. Used with Windows Terminal on WSL2 and Virtual Machines.
+
+Follow
+```console
+git clone https://github.com/vlaine5/myzsh.git
+chmod +x zsh.sh
+chmod +x install.sh
+./zsh.sh
+```
+
+# Prompt
 ```console
 vagrant@worker-1:~$ git clone https://github.com/vlaine5/myzsh.git
 Cloning into 'myzsh'...
@@ -89,5 +101,4 @@ End of git clone
 Copy OhMyZsh worked
 [powerlevel10k] fetching gitstatusd .. [ok]
 
-       ~/myzsh      main !1                                                                                                                                                                                               ✔   vagrant@worker-1   
 ```
