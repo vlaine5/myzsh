@@ -26,8 +26,9 @@ cp -rv .p10k.zsh $HOME
 
 cp -rv .zshrc $HOME
 
-cp -r .oh-my-zsh $HOME
+cp -rf .oh-my-zsh $HOME
 if [[ $? = 0 ]] ; then 
-echo ".oh-my-zsh copy worked"
+echo "Copy ohMyZsh done"
+fi
 
 exec zsh -l
